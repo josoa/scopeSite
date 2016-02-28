@@ -1,5 +1,7 @@
-$colorDefault: #fff00f;
+@import 'bootstrap';
+@import 'font-awesome.min';
 
 body {
-	background :$colorDefault;
+	background: #000;
 }
+
