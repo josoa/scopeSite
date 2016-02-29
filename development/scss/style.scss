@@ -5,6 +5,16 @@ $color1: #407ec9;
 $color2: #64a70b;
 $color3: #002b49;
 $color4: #444;
+$color5: #fff;
+$color6: rgb(255, 130, 0);
+
+$color1-trans: #407ec9;
+$color2-trans: #64a70b;
+$color3-trans: #002b49;
+$color4-trans: #444;
+$color5-trans: #fff;
+$color6-trans: rgba(255, 130, 0, .7);
+
 
 $font1: 'Open Sans', sans-serif;
 $font2: 'Coda', sans-serif;
@@ -24,9 +34,10 @@ body {
 }
 
 .headline {
-	font-size: 4.36em;
+	font-size: 3em;
 	font-weight: $weight1;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 h1 {
@@ -114,9 +125,42 @@ header img {
 	margin-bottom: 25px;
 }
 
-nav a:hover {
-	border-bottom: solid 3px $color3;
+/* color */
+
+nav a:link, nav a:visited, nav a:active, nav a:target {
+	color: $color3;
 }
+
+nav a:hover {
+	color: $color2;
+}
+
+.social a:link, .social a:visited, .social a:active, .social a:target {
+	color: $color1;
+}
+
+.social a:hover {
+	color: $color5;
+}
+
+/* home */
+
+.full-image {
+	background-image: url(../img/field1.jpg);
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+.edge-ad {
+	background-color: $color6-trans;
+	text-align: center;
+}
+
+.edge-ad img {
+	width: 70%;
+	margin: 25px 15%;
+}
+
 
 
 
