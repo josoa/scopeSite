@@ -8,10 +8,10 @@
   },
   "author": "Ashley Jhaveri",
   "license": "ISC",
-  "dependencies": {
-    "gulp-livereload": "^3.8.1"
-  },
   "devDependencies": {
-    "browser-sync": "^2.11.1"
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-file-include": "^0.13.7",
+    "gulp-sass": "^2.2.0"
   }
 }
