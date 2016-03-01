@@ -7799,5 +7799,161 @@ button.close {
 .fa-percent:before {
   content: "\f295"; }
 
+/* layout */
+img {
+  width: 90%;
+  margin-right: 10%; }
+
+/* typography */
 body {
-  background: #000; }
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  font-size: 16px; }
+
+header {
+  font-size: 1.27em; }
+
+.headline {
+  font-family: "Coda", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-top: 25px; }
+
+h1 {
+  font-family: "Coda", sans-serif;
+  font-size: 2.18em;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 1.63em;
+  text-transform: uppercase;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1.45em;
+  font-weight: 600; }
+
+h4 {
+  font-size: 1.45em;
+  font-weight: 300; }
+
+h5 {
+  font-family: "Coda", sans-serif;
+  font-size: 1.27em; }
+
+h6 {
+  font-size: 1.27em; }
+
+p {
+  font-size: 1em;
+  line-height: 1.63em; }
+
+a:link, a:visited, a:active, a:target {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+li {
+  line-height: 1.63em; }
+
+button {
+  text-transform: uppercase; }
+
+/* color */
+body {
+  color: #fff; }
+
+button {
+  background-color: #fff;
+  color: #444;
+  border: outset 3px #64a70b; }
+
+nav a:link, nav a:visited, nav a:active, nav a:target {
+  color: #002b49; }
+
+nav a:hover {
+  color: #64a70b; }
+
+.social a:link, .social a:visited, .social a:active, .social a:target {
+  color: #407ec9; }
+
+.social a:hover {
+  color: #fff; }
+
+a:link .edge-ad, a:visited .edge-ad, a:target .edge-ad, a:active .edge-ad {
+  color: #fff; }
+
+footer p {
+  color: #444; }
+
+/* lists */
+ul {
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.product li:before {
+  content: '∆ ';
+  color: #64a70b; }
+
+.product li img {
+  float: left; }
+
+/* button */
+button {
+  width: 100%; }
+
+/* header */
+header {
+  margin-bottom: 25px; }
+
+header ul {
+  float: right;
+  padding-right: 25px;
+  vertical-align: middle; }
+
+header ul li, footer ul li {
+  margin: 0 10px;
+  padding: 15px;
+  float: left; }
+
+header img {
+  float: left;
+  width: 25%;
+  padding-left: 35px;
+  margin: 0 auto; }
+
+.social {
+  background: #002b49;
+  margin-bottom: 45px; }
+
+/* footer */
+/* home */
+.banner {
+  margin: 0 5% 25px 5%;
+  width: calc(100% - 10%); }
+
+.full-image {
+  background-image: url(../img/field_texture.png);
+  background-attachment: fixed;
+  background-color: #64a70b; }
+
+.edge-ad {
+  background-color: rgba(255, 130, 0, 0.7);
+  text-align: center; }
+
+.edge-ad img {
+  width: 70%;
+  margin: 25px 15%; }
+
+.featured-content {
+  width: calc(100% - 10%);
+  background-color: rgba(0, 43, 73, 0.7);
+  padding: 25px;
+  margin: 0 5%; }
