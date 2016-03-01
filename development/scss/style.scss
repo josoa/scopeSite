@@ -28,8 +28,8 @@ $weight3: 600;
 /* layout */
 
 img {
-	width: 80%;
-	margin: 0 10%;
+	width: 90%;
+	margin-right: 10%;
 }
 
  /* typography */
@@ -46,10 +46,10 @@ header {
 }
 
 .headline {
+	font-family: $font2;
 	font-size: 3em;
 	font-weight: $weight1;
 	text-transform: uppercase;
-	text-align: center;
 	padding-top: 25px;
 }
 
@@ -135,6 +135,9 @@ nav a:hover {
 	color: $color5;
 }
 
+a:link .edge-ad, a:visited .edge-ad, a:target .edge-ad, a:active .edge-ad {
+	color: $color5;
+}
 
 footer p {
 	color: $color4;
@@ -151,7 +154,8 @@ li {
 }
 
 .product li:before {
-	content: '-';
+	content: '∆ ';
+	color: $color2;
 }
 
 .product li img {
@@ -201,14 +205,16 @@ header img {
 /* home */
 
 .banner {
-	margin-bottom: 25px;
+	margin: 0 5% 25px 5%;
+	width: calc(100% - 10%);
+	
 }
 
+
 .full-image {
-	background-image: url(../img/field1.jpg);
-	-webkit-background-size: 100%;
-	background-size: 100%;
+	background-image: url(../img/field_texture.png);
 	background-attachment: fixed;
+	background-color: $color2;
 }
 
 .edge-ad {
