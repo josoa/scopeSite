@@ -5,14 +5,14 @@ $color1: #407ec9;
 $color2: #64a70b;
 $color3: rgb(0, 43, 73);
 $color4: #444;
-$color5: #fff;
+$color5: rgb(240, 240, 240);
 $color6: rgb(255, 130, 0);
 
 $color1-trans: #407ec9;
 $color2-trans: #64a70b;
 $color3-trans: rgba(0, 43, 73, .7);
 $color4-trans: #444;
-$color5-trans: #fff;
+$color5-trans: rgba(240, 240, 240, .7);
 $color6-trans: rgba(255, 130, 0, .7);
 
 
@@ -110,7 +110,7 @@ button {
 /* color */
 
 body {
-	color: $color5;
+	color: $color4;
 }
 
 button {
@@ -136,6 +136,14 @@ nav a:hover {
 }
 
 a:link .edge-ad, a:visited .edge-ad, a:target .edge-ad, a:active .edge-ad {
+	color: $color5;
+}
+
+blockquote {
+	border-left: 5px solid $color1;
+}
+
+.banner {
 	color: $color5;
 }
 
@@ -188,15 +196,16 @@ header ul li, footer ul li {
 
 header img {
 	float: left;
-	width: 25%;
+	width: 100%;
 	padding-left: 35px;
 	margin: 0 auto;
 }
 
 .social {
 	background: $color3;
-	margin-bottom: 45px;
+	margin-bottom: 30px;
 }
+
 
 /* footer */ 
 
@@ -228,7 +237,7 @@ header img {
 
 .featured-content {
 	width: calc(100% - 10%);
-	background-color: $color3-trans;
+	background-color: $color5;
 	padding: 25px;
 	margin: 0 5%;
 }
