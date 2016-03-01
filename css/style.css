@@ -7866,10 +7866,10 @@ button {
 
 /* color */
 body {
-  color: #fff; }
+  color: #444; }
 
 button {
-  background-color: #fff;
+  background-color: #f0f0f0;
   color: #444;
   border: outset 3px #64a70b; }
 
@@ -7883,10 +7883,16 @@ nav a:hover {
   color: #407ec9; }
 
 .social a:hover {
-  color: #fff; }
+  color: #f0f0f0; }
 
 a:link .edge-ad, a:visited .edge-ad, a:target .edge-ad, a:active .edge-ad {
-  color: #fff; }
+  color: #f0f0f0; }
+
+blockquote {
+  border-left: 5px solid #407ec9; }
+
+.banner {
+  color: #f0f0f0; }
 
 footer p {
   color: #444; }
@@ -7925,13 +7931,13 @@ header ul li, footer ul li {
 
 header img {
   float: left;
-  width: 25%;
+  width: 100%;
   padding-left: 35px;
   margin: 0 auto; }
 
 .social {
   background: #002b49;
-  margin-bottom: 45px; }
+  margin-bottom: 30px; }
 
 /* footer */
 /* home */
@@ -7954,6 +7960,6 @@ header img {
 
 .featured-content {
   width: calc(100% - 10%);
-  background-color: rgba(0, 43, 73, 0.7);
+  background-color: #f0f0f0;
   padding: 25px;
   margin: 0 5%; }
