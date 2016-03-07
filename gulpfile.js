@@ -57,6 +57,16 @@ gulp.task('fileinclude', function() {
     .pipe(browserSync.stream());
 });
 
+gulp.task('fileinclude', function() {
+  gulp.src(['./development/*.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: './development'
+    }))
+    .pipe(gulp.dest('production/'))
+    .pipe(browserSync.stream());
+});
+
 
 gulp.task('default', ['serve', 'fileinclude', 'copy']);
 gulp.task('copy', ['js', 'img', 'fonts']);

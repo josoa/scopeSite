@@ -1,269 +1,45 @@
-@import 'bootstrap';
-@import 'font-awesome.min';
+@import '_bootstrap';
+@import '_bootstrap.min';
+@import '_modern-business';
 
-$color1: #407ec9;
-$color2: #64a70b;
-$color3: rgb(0, 43, 73);
-$color4: #444;
-$color5: rgb(240, 240, 240);
-$color6: rgb(255, 130, 0);
-
-$color1-trans: #407ec9;
-$color2-trans: #64a70b;
-$color3-trans: rgba(0, 43, 73, .7);
-$color4-trans: #444;
-$color5-trans: rgba(240, 240, 240, .7);
-$color6-trans: rgba(255, 130, 0, .7);
-
-
-$font1: 'Open Sans', sans-serif;
-$font2: 'Coda', sans-serif;
-
-$tracking: .05em;
-
-$weight1: 300;
-$weight2: 400;
-$weight3: 600;
-
-/* layout */
-
-img {
-	width: 90%;
-	margin-right: 10%;
+#site-logo {
+	max-width: 80%;
 }
 
- /* typography */
-
-body {
-	font-family: $font1;
-	font-weight: $weight2;
-	letter-spacing: $tracking;
-	font-size: 16px;
-}
-
-header {
-	font-size: 1.27em;
-}
-
-.headline {
-	font-family: $font2;
-	font-size: 3em;
-	font-weight: $weight1;
-	text-transform: uppercase;
-	padding-top: 25px;
-}
-
-h1 {
-	font-family: $font2;
-	font-size: 2.18em;
-	text-transform: uppercase;
-}
-
-h2 {
-	font-size: 1.63em;
-	text-transform: uppercase;
-	font-weight: $weight3;
-}
-
-h3 {
-	font-size: 1.45em;
-	font-weight: $weight3;
-}
-
-h4 {
-	font-size: 1.45em;
-	font-weight: $weight1;
-}
-
-h5 {
-	font-family: $font2;
-	font-size: 1.27em;
-}
-
-h6 {
-	font-size: 1.27em;
-}
-
-p {
-	font-size: 1em;
-	line-height: 1.63em;
-}
-
-a:link, a:visited, a:active, a:target {
-	font-weight: $weight3;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: none;
-}
-
-li {
-	line-height: 1.63em;
-}
-
-button {
-	text-transform: uppercase;
-}
-
-/* color */
-
-body {
-	background: $color5;
-	color: $color4;
-}
-
-button {
-	background-color: $color3;
-	color: $color5;
-	border: outset 3px $color1;
-	outline: none;
-}
-
-button:active {
-	border: inset 3px $color1;
-	outline: none;
-}
-
-nav a:link, nav a:visited, nav a:active, nav a:target {
-	color: $color3;
-}
-
-nav a:hover {
-	color: $color2;
-}
-
-.social a:link, .social a:visited, .social a:active, .social a:target {
-	color: $color1;
-}
-
-.social a:hover {
-	color: $color5;
-}
-
-a:link .edge-ad, a:visited .edge-ad, a:target .edge-ad, a:active .edge-ad {
-	color: $color5;
-}
-
-blockquote {
-	border-left: 5px solid $color1;
-}
-
-.banner {
-	color: $color5;
-}
-
-footer p {
-	color: $color4;
-}
-
-/* lists */
-
-ul {
-	padding: 0;
-}
-
-li {
-	list-style: none;
-}
-
-.product li:before {
-	content: '∆ ';
-	color: $color2;
-}
-
-.product li img {
-	float: left;
-}
-
-/* button */
-
-button {
-	width: 100%;
-}
-
-/* header */
-
-header {
-	margin-bottom: 5px;
-}
-
-header ul {
-	float: right;
-	padding-right: 25px;
-	vertical-align: middle;
-}
-
-header ul li, footer ul li {
-	margin: 0 10px;
-	padding: 15px;
-	float: left;
-}
-
-header img {
-	float: left;
-	width: 100%;
-	padding: 25px;
-	margin: 0 auto;
+.edge-logo {
+	max-width: 80%;
+	margin: 0 10%;
 }
 
 .social {
-	margin-bottom: 5px;
-	font-size: 1em;
+	margin-bottom: 10px;
 }
 
-
-/* footer */ 
-
-
-
-/* home */
-
-.banner {
-	margin: 0 5% 15px 5%;
-	width: calc(100% - 10%);
-	
+.social ul {
+	margin: 0;
+	padding-left: 0;
 }
 
-.full-image {
-	background-image: url(../img/field1.JPG);
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-attachment: fixed;
-	background-color: $color2;
+.social ul li {
+	float: left;
+	list-style: none;
+	margin-right: 25px;
+	font-size: 1.2em;;
 }
 
-.edge-ad {
-	background-color: $color6;
-	text-align: center;
-	font-size: .75em;
+.social ul li:first-of-type {
+	margin-left: 0;
 }
 
-.edge-ad img {
-	width: 90%;
-	margin: 0 5%;
+.page-header {
+	float: right;
 }
 
-.edge-ad div {
-	margin: 25px 0 15px 0;
+.left {
+	float: left;
 }
 
-.featured-content {
-	width: calc(100% - 10%);
-	background-color: $color5;
-	padding: 25px;
-	margin: 0 5%;
+iframe {
+	width: 100%;
+	margin: 10px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
