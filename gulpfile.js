@@ -48,7 +48,7 @@ gulp.task('img', function() {
 //});
 
 gulp.task('fileinclude', function() {
-  gulp.src(['./development/index.html'])
+  gulp.src(['./development/*.html'])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: './development'

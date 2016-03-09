@@ -2,6 +2,47 @@
 @import '_bootstrap.min';
 @import '_modern-business';
 
+$color1: orange;
+$color2: #333;
+$color3: rgb(250,250,250);
+
+$color3-trans: rgba(250,250,250,.5);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav, footer, .picture-text, .product {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+nav, footer {
+	font-size: 1.25em;
+}
+
+footer {
+	background: #fff;
+}
+
+.picture-text {
+	font-size: 4em;
+	color: $color3;
+}
+
+.product h4 {
+	font-size: 2em;
+}
+
+.nav > li > a:link, .nav > li > a:visited {
+	color: $color2;
+}
+
+.nav > li > a:hover, .nav > li > a:active, .nav > li > a:target {
+	background: $color3;
+	color: $color1;
+}
+
 #site-logo {
 	max-width: 80%;
 }
@@ -44,6 +85,10 @@ iframe {
 	margin: 10px 0;
 }
 
+.iframe-large {
+	height: 400px;
+}
+
 header {
 	margin-bottom: 25px;
 }
@@ -59,4 +104,45 @@ header {
 
 img {
 	max-width: 100%;
+}
+
+.title {
+	padding-bottom: 5px;
+	border-bottom: solid 1.5px #eee;
+}
+
+.page-header {
+	border-bottom: none;
+	color: $color1;
+}
+
+.first-on-page {
+	margin: 100px 0;
+}
+
+.panel-home {
+	background: $color3-trans;
+}
+
+.panel-home > .panel-heading {
+	background: $color3-trans;
+}
+
+.panel-default {
+	border: none;
+}
+
+.panel-default > .edge {
+	background: $color1;
+}
+
+.home {
+	background-image: url(../img/25manual/IMG_0258.JPG);
+	background-attachment: fixed;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+}
+
+button {
+	margin: 25px 0;
 }
