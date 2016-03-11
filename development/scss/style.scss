@@ -2,17 +2,23 @@
 @import '_bootstrap.min';
 @import '_modern-business';
 
-$color1: orange;
+$color1: rgb(247, 145, 59);
 $color2: #333;
 $color3: rgb(250,250,250);
+$color4: #337ab7;
+$color5: #286090;
 
-$color3-trans: rgba(250,250,250,.5);
+$color3-trans: rgba(250,250,250,.8);
 
-body {
+p, li {
 	font-family: 'Open Sans', sans-serif;
 }
 
-nav, footer, .picture-text, .product {
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+nav li, footer p, .picture-text, .product, .btn {
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-transform: uppercase;
 }
@@ -47,29 +53,29 @@ footer {
 	max-width: 80%;
 }
 
-.edge-logo {
-	max-width: 80%;
-	margin: 0 10%;
-}
-
 .social {
-	margin-bottom: 10px;
+	margin: 20px 0 10px 0;
 }
 
 .social ul {
 	margin: 0;
 	padding-left: 0;
+	float: right;
 }
 
 .social ul li {
 	float: left;
 	list-style: none;
-	margin-right: 25px;
-	font-size: 1.2em;;
+	margin-left: 25px;
+	font-size: 1em;;
 }
 
 .social ul li:first-of-type {
 	margin-left: 0;
+}
+
+.nav {
+	margin-bottom: 15px;
 }
 
 .page-header {
@@ -117,7 +123,7 @@ img {
 }
 
 .first-on-page {
-	margin: 100px 0;
+	margin: 65px 0;
 }
 
 .panel-home {
@@ -137,7 +143,7 @@ img {
 }
 
 .home {
-	background-image: url(../img/25manual/IMG_0258.JPG);
+	background-image: url(../img/25manual/IMG_0264.JPG);
 	background-attachment: fixed;
 	-webkit-background-size: 100%;
 	background-size: 100%;
@@ -145,4 +151,48 @@ img {
 
 button {
 	margin: 25px 0;
+}
+
+.btn-default {
+	background-color: $color4;
+	color: $color3;
+}
+
+.btn-default:hover {
+	background-color: $color5;
+	color: $color3;
+}
+
+.btn {
+	border-radius: 0px;
+	border: none;
+	font-size: 1.5em;
+	letter-spacing: .5px;
+}
+
+.btn-primary {
+	border: none;
+}
+
+h6 {
+	font-size: 1em;
+	line-height: 1.25em;
+}
+
+.edge-ad {
+	background-color: $color1;
+}
+
+.edge-ad p {
+	text-align: center;
+	color: $color3;
+}
+
+.edge-ad img {
+	width: 80%;
+	margin: 10%;
+}
+
+.offer {
+	color: $color4;
 }
