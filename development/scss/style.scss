@@ -2,12 +2,14 @@
 @import '_bootstrap.min';
 @import '_modern-business';
 
-$color1: rgb(247, 145, 59); 
+$color1: rgb(247, 148, 30);
 $color2: #333;
 $color3: rgb(250,250,250);
 $color4: #337ab7;
 $color5: #286090;
 $color6: #999;
+$edgecolor2: rgb(28, 117, 188);
+$edgecolor3: rgb(35, 31, 32);
 
 $color3-trans: rgba(250,250,250,.8);
 
@@ -16,6 +18,11 @@ $color3-trans: rgba(250,250,250,.8);
 body {
 	color: $color2;
 }
+
+.dark {
+	background: $color2;
+}
+
 
 footer {
 	background: #fff;
@@ -68,10 +75,10 @@ footer {
 	color: $color3;
 }
 
-.page-header {
-	border-bottom: none;
-	color: $color1;
+.section-header {
+	color: $color4;
 }
+
 
 .offer {
 	color: $color4;
@@ -100,6 +107,7 @@ footer {
 	border: none;
 }
 
+
 .btn {
 	background-color: $color4;
 	color: $color3;
@@ -115,6 +123,11 @@ footer {
 	color: $color3;
 }
 
+.light {
+	color: $color3;
+}
+
+
 /* typography */
 
 body, .product h1 {
@@ -125,6 +138,10 @@ nav li, footer p, .picture-text, .product, .btn, .featured-list, h1, h2, h3, h4,
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+body {
+	line-height: 1.68em;
 }
 
 nav, footer {
@@ -144,6 +161,7 @@ h6 {
 	font-size: 1.2em;
 }
 
+
 .picture-text {
 	font-size: 4em;
 }
@@ -154,12 +172,12 @@ h6 {
 }
 
 .btn {
-	font-size: 1.5em;
-	letter-spacing: .5px;
+	font-size: 1.25em;
+	letter-spacing: .6px;
 }
 
 .btn-features {
-	font-size: 1.125em;
+	font-size: 1em;
 	font-weight: 300;
 }
 
@@ -168,7 +186,7 @@ h6 {
 }
 
 .featured-list {
-	font-size: 1.125em;
+	font-size: 1em;
 }
 
 .offer {
@@ -240,10 +258,11 @@ img {
 
 iframe {
 	width: 100%;
-	margin: 10px 0;
+	margin: 0;
+	height: 300px;
 }
 
-.iframe-large {
+.iframe-lg {
 	height: 400px;
 }
 
@@ -356,12 +375,19 @@ nav li {
 	text-align: right;
 }
 
-
-
-.home {
-	background-image: url(../img/25manual/IMG_0258-crop.JPG);
+.photo1, .photo2 {
 	-webkit-background-size: 100%;
 	background-size: 100%;
+	background-attachment: fixed;
+
+}
+
+.photo1 {
+	background-image: url(../img/30sportScope/DSC_0127.JPG);
+}
+
+.photo2 {
+	background-image: url(../img/30sportScope/DSC_0068.JPG);
 }
 
 .panel-home > .product {
@@ -371,3 +397,17 @@ nav li {
 .title {
 	margin-bottom: 22px;
 }
+
+.section-header {
+	margin: 25px 0 15px;
+	padding: 15px;
+}
+
+section {
+	margin-bottom: 45px;
+}
+
+.container-fluid {
+	padding: 0 50px;
+}
+
