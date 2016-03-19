@@ -7,7 +7,7 @@ $color2: rgb(50, 54, 56);
 $color3: rgb(250,250,250);
 $color4: #337ab7;
 $color5: #286090;
-$color6: rgb(70, 85,93);
+$color6: rgb(150, 150,153);
 $edgecolor2: rgb(28, 117, 188);
 $edgecolor3: rgb(35, 31, 32);
 
@@ -21,8 +21,16 @@ body {
 
 .dark {
 	background: $color2;
+	color: $color3;
 }
 
+.dark small {
+	color: $color6;
+}
+
+.light-container {
+	background: $color3-trans;
+}
 
 footer {
 	background: #fff;
@@ -68,7 +76,7 @@ footer {
 
 
 .title {
-	border-bottom: solid 1.5px $color6;
+	border-bottom: solid 1.5px $color1;
 }
 
 .picture-text {
@@ -130,7 +138,7 @@ footer {
 
 /* typography */
 
-body, .product h1 {
+body, .product h2 {
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -185,6 +193,10 @@ h6 {
 	line-height: .43em;
 }
 
+.btn-xs {
+	font-size: 1em;
+}
+
 .featured-list {
 	font-size: 1em;
 }
@@ -197,7 +209,7 @@ h6 {
 .panel-home > .product {
 	text-align: center;
 	font-weight: 700;
-	letter-spacing: 2px;
+	letter-spacing: 2.2px;
 	font-size: 3em;
 
 }
@@ -208,6 +220,10 @@ h6 {
 
 .center {
 	text-align: center;
+}
+
+.right {
+	text-align: right;
 }
 
 .dropdown-menu li {
@@ -291,6 +307,8 @@ iframe {
 	margin-top: 1.5em;
 }
 
+
+
 /************************/
 /******** HEADER ********/
 /************************/
@@ -373,19 +391,25 @@ nav li {
 }
 
 .right {
-	text-align: right;
+	float: right;
 }
+
+.container-fluid {
+	padding: 0 50px;
+}
+
 
 .photo-bg {
 	-webkit-background-size: 100%;
 	background-size: 100%;
 	background-attachment: fixed;
+	padding-bottom: 75px;
 }
 
 
 
 .panel-home > .product {
-	padding-bottom: 15px;
+	padding: 5px;
 }
 
 .title {
@@ -401,7 +425,7 @@ section {
 	margin-bottom: 45px;
 }
 
-.container-fluid {
-	padding: 0 50px;
+.light-container {
+	padding: 15px;
+	border-radius: 4px;
 }
-
