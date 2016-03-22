@@ -19,17 +19,25 @@ body {
 	color: $color2;
 }
 
-.dark {
+.dark-container {
 	background: $color2;
+}
+
+
+.dark-text {
 	color: $color3;
 }
 
-.dark small {
+.dark-text small {
 	color: $color6;
 }
 
 .light-container {
 	background: $color3-trans;
+}
+
+.light-text {
+	color: $color3;
 }
 
 footer {
@@ -131,10 +139,23 @@ footer {
 	color: $color3;
 }
 
-.light {
+.nav-tabs > li > a:link {
+	background: $color5;
+	border: none;
 	color: $color3;
 }
 
+.nav-tabs > li > a:hover {
+	background: $color2;
+}
+
+.nav-tabs > li > a:link .active {
+	background: $color6;
+}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+	border: none;
+}
 
 /* typography */
 
@@ -169,6 +190,9 @@ h6 {
 	font-size: 1.2em;
 }
 
+.inline {
+	display: inline;
+}
 
 .picture-text {
 	font-size: 4em;
@@ -249,8 +273,12 @@ ul {
 	padding-left: 15px;
 }
 
-li {
+ul li {
 	list-style: outside square;
+}
+
+ol li {
+	list-style: outside decimal;
 }
 
 .featured-list {
@@ -350,9 +378,6 @@ nav li {
 	list-style: none;
 }
 
-.nav {
-	margin-bottom: 15px;
-}
 
 /*********************************/
 /******** SPECIFIC IMAGES ********/
@@ -366,6 +391,11 @@ nav li {
 .btn-donate img {
 	width: 80%;
 	margin: 0 10%;
+}
+
+.panel img {
+	max-width: 100%;
+	max-height: 250px;
 }
 
 /************************/
@@ -407,9 +437,17 @@ nav li {
 }
 
 
-
 .panel-home > .product {
 	padding: 5px;
+}
+
+.container-fluid .panel {
+	margin-top: 16px;
+}
+
+.container-fluid .roomy  {
+	margin: 16px 0;
+
 }
 
 .title {
@@ -427,5 +465,14 @@ section {
 
 .light-container {
 	padding: 15px;
-	border-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.nav-tabs li a {
+	margin-left: 5px;
+}
+
+.nav-tabs li:first-of-type a {
+	margin-left: 0;
 }
