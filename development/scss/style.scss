@@ -19,8 +19,13 @@ body {
 	color: $color2;
 }
 
+.section-header {
+	color: $color4;
+}
+
+
 .dark-container {
-	background: $color2;
+	background: $color5;
 }
 
 
@@ -91,9 +96,6 @@ footer {
 	color: $color3;
 }
 
-.section-header {
-	color: $color4;
-}
 
 
 .offer {
@@ -140,13 +142,14 @@ footer {
 }
 
 .nav-tabs > li > a:link {
-	background: $color5;
+	background: $color4;
 	border: none;
 	color: $color3;
 }
 
 .nav-tabs > li > a:hover {
-	background: $color2;
+	background: $color5;
+	color: $color3;
 }
 
 .nav-tabs > li > a:link .active {
@@ -157,15 +160,43 @@ footer {
 	border: none;
 }
 
+.navbar-toggle .icon-bar {
+	color: $color3;
+}
+
+.navbar-toggle {
+	background: $color1;
+}
+
+
+.bam-text li {
+	list-style: none;
+}
+
+.bam-text li a:link {
+	color: $color3;
+}
+
+.bam-text li a:hover, .bam-text li .active {
+	color: $color1;
+}
+
+.dark-container blockquote {
+	border-left: 3px solid $color3;
+}
+
+blockquote {
+	border-left: 3px solid $color5;
+}
+
 /* typography */
 
 body, .product h2 {
 	font-family: 'Open Sans', sans-serif;
 }
 
-nav li, footer p, .picture-text, .product, .btn, .featured-list, h1, h2, h3, h4, h5, h6 {
+nav li, footer p, .picture-text, .product, .btn, .featured-list, .nav-tabs li a:link, .bam-text, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -255,6 +286,17 @@ h6 {
 	font-weight: 700;
 }
 
+blockquote {
+	font-size: 1.125em;
+	line-height:1.875em;
+}
+
+
+.bam-text li {
+	font-size: 3em;
+	line-height: 1.25em;
+	margin-bottom: 35px;
+}
 
 /************************/
 /******** GLOBAL ********/
@@ -469,10 +511,6 @@ section {
 	border-bottom-left-radius: 4px;
 }
 
-.nav-tabs li a {
-	margin-left: 5px;
-}
-
-.nav-tabs li:first-of-type a {
-	margin-left: 0;
+blockquote {
+	margin-top: 25px;
 }
