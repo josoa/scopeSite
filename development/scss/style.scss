@@ -189,6 +189,40 @@ blockquote {
 	border-left: 3px solid $color5;
 }
 
+.table-compare tbody tr th {
+	background: $color6;
+	color: $color3;
+}
+
+.table-compare tbody tr td:first-of-type {
+	color: $color5;
+}
+
+.table-compare tr td:nth-of-type(2), .table-compare tr th:nth-of-type(2) {
+	border-left: 2px solid $color5;
+	border-right: 2px solid $color5;
+}
+
+.table-compare thead th:nth-of-type(2) {
+	background: $color5;
+	color: $color3;
+}
+
+.table-compare tbody > tr:last-of-type > th:nth-of-type(2) {
+	background: $color5;
+	color: $color3;
+}
+
+.table-compare .check-yes {
+	background: #73c373;
+	color: $color3;
+}
+
+.table-compare .no {
+	background: #555;
+	color: $color3;
+}
+
 /* typography */
 
 body, .product h2 {
@@ -296,6 +330,19 @@ blockquote {
 	font-size: 3em;
 	line-height: 1.25em;
 	margin-bottom: 35px;
+}
+
+.table-compare {
+	text-align: center;
+}
+
+.table-compare tbody tr td:first-of-type {
+	font-weight: 600;
+	text-align: left;
+}
+
+.table-compare tbody tr .indent {
+	padding-left: 45px;
 }
 
 /************************/
@@ -484,7 +531,7 @@ nav li {
 }
 
 .container-fluid .panel {
-	margin-top: 16px;
+	margin-top: 10%;
 }
 
 .container-fluid .roomy  {
@@ -512,4 +559,8 @@ section {
 
 blockquote {
 	margin-top: 25px;
+}
+
+@media (max-width: 1065px) {
+	
 }
