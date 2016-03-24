@@ -11967,6 +11967,9 @@ body {
 .dark-text small {
   color: #969699; }
 
+.edge-container {
+  background: #f7941e; }
+
 .light-container {
   background: rgba(250, 250, 250, 0.8); }
 
@@ -12024,7 +12027,7 @@ footer {
 
 .panel-home > .product {
   color: #fafafa;
-  background-color: #323638; }
+  background-color: #286090; }
 
 .panel-default {
   border: none; }
@@ -12104,6 +12107,9 @@ blockquote {
   background: #555;
   color: #fafafa; }
 
+.divider {
+  border-bottom: 2px solid #337ab7; }
+
 /* typography */
 body, .product h2 {
   font-family: 'Open Sans', sans-serif; }
@@ -12158,11 +12164,12 @@ h6 {
 .offer {
   text-align: center; }
 
-.panel-home > .product {
+.panel-home > .product h2 {
   text-align: center;
   font-weight: 700;
   letter-spacing: 2.2px;
-  font-size: 3em; }
+  font-size: 2em;
+  margin-top: 10px; }
 
 .product h4 {
   font-size: 2em; }
@@ -12186,15 +12193,18 @@ blockquote {
   line-height: 1.25em;
   margin-bottom: 35px; }
 
-.table-compare {
+.table-compare th, .table-compare tbody {
   text-align: center; }
 
-.table-compare tbody tr td:first-of-type {
+.table-compare tr td:first-of-type, .table-compare tr th:first-of-type {
   font-weight: 600;
   text-align: left; }
 
 .table-compare tbody tr .indent {
   padding-left: 45px; }
+
+.bottom {
+  padding-top: 35px; }
 
 /************************/
 /******** GLOBAL ********/
@@ -12221,6 +12231,9 @@ ol li {
 
 .dropdown-menu li {
   margin: 6px 0; }
+
+.divider {
+  list-style: none; }
 
 /* images */
 img {
@@ -12322,11 +12335,18 @@ nav li {
 .container-fluid {
   padding: 0 50px; }
 
+.photo-bg-home, .photo-bg {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.photo-bg-home {
+  background-attachment: scroll;
+  background-position: top;
+  padding-bottom: 15%; }
+
 .photo-bg {
-  -webkit-background-size: 100%;
-  background-size: 100%;
-  background-attachment: fixed;
-  padding-bottom: 75px; }
+  background-attachment: fixed; }
 
 .panel-home > .product {
   padding: 5px; }
@@ -12353,3 +12373,12 @@ section {
 
 blockquote {
   margin-top: 25px; }
+
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+footer {
+  margin: 25px 0 10px; }
+
+.navbar-header {
+  display: inline; }
