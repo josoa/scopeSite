@@ -555,7 +555,7 @@ nav li {
 	padding: 5px;
 }
 
-.container-fluid .panel {
+.container-fluid .first-panel {
 	margin-top: 10%;
 }
 
@@ -596,6 +596,25 @@ footer {
 
 .navbar-header {
 	display: inline;
+}
+
+/** EDGE pages **/
+
+.edge-panel .panel-heading {
+	border: none;
+	background: none;
+}
+
+
+.edge-panel .panel-heading .panel-title {
+	font-size: 1.6em;
+	color: $color5;
+}
+
+.edge-title {
+	color: $color1;
+	margin: 0;
+	border-top: 2px solid $color1;
 }
 
 @media (max-width: 1065px) {
