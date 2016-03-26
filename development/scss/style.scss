@@ -38,7 +38,7 @@ body {
 }
 
 .dark-edge-container {
-	background: $edgecolor2;
+	background: $edgecolor3;
 }
 
 .edge-container {
@@ -119,6 +119,9 @@ footer {
 	color: $color2;
 }
 
+.edge-panel i {
+	color: $color1;
+}
 
 .panel-home {
 	background: $color3-trans;
@@ -354,13 +357,14 @@ blockquote {
 	text-align: left;
 }
 
-.table-compare tbody tr .indent {
-	padding-left: 45px;
+.dark-edge-container h3 {
+	line-height: 1.35em;
 }
 
-.bottom {
-	padding-top: 35px;
+.dark-edge-container {
+	line-height: 1.75em;
 }
+
 
 /************************/
 /******** GLOBAL ********/
@@ -480,7 +484,7 @@ iframe {
 .fa-shopping-cart {
 	padding: 5px 7px;
 	border-radius: 25%;
-}
+} 
 
 /* navigation */
 
@@ -628,6 +632,23 @@ footer {
 
 .dark-edge-container {
 	padding-top: 15px;
+}
+
+
+.table-compare tbody tr .indent {
+	padding-left: 45px;
+}
+
+.bottom {
+	padding-top: 35px;
+}
+
+.dark-edge-container {
+	padding-bottom: 15px;
+}
+
+.dark-edge-container .edge-ad {
+	margin-top: 1.5em;
 }
 
 @media (max-width: 1065px) {
