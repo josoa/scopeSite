@@ -11967,6 +11967,9 @@ body {
 .dark-text small {
   color: #969699; }
 
+.dark-edge-container {
+  background: #231f20; }
+
 .edge-container {
   background: #f7941e; }
 
@@ -12021,6 +12024,9 @@ footer {
 
 .edge-ad h4 {
   color: #323638; }
+
+.edge-panel i {
+  color: #f7941e; }
 
 .panel-home {
   background: rgba(250, 250, 250, 0.8); }
@@ -12200,11 +12206,11 @@ blockquote {
   font-weight: 600;
   text-align: left; }
 
-.table-compare tbody tr .indent {
-  padding-left: 45px; }
+.dark-edge-container h3 {
+  line-height: 1.35em; }
 
-.bottom {
-  padding-top: 35px; }
+.dark-edge-container {
+  line-height: 1.75em; }
 
 /************************/
 /******** GLOBAL ********/
@@ -12346,12 +12352,13 @@ nav li {
   padding-bottom: 15%; }
 
 .photo-bg {
+  padding-top: 15px;
   background-attachment: fixed; }
 
 .panel-home > .product {
   padding: 5px; }
 
-.container-fluid .panel {
+.container-fluid .first-panel {
   margin-top: 10%; }
 
 .container-fluid .roomy {
@@ -12382,3 +12389,35 @@ footer {
 
 .navbar-header {
   display: inline; }
+
+/** EDGE pages **/
+.edge-panel .panel-heading {
+  border: none;
+  background: none; }
+
+.edge-panel .panel-heading .panel-title {
+  font-size: 1.6em;
+  color: #286090; }
+
+.edge-title {
+  color: #f7941e;
+  margin: 0;
+  border-top: 2px solid #f7941e; }
+
+.edge-container .edge-title {
+  color: #fafafa; }
+
+.dark-edge-container {
+  padding-top: 15px; }
+
+.table-compare tbody tr .indent {
+  padding-left: 45px; }
+
+.bottom {
+  padding-top: 35px; }
+
+.dark-edge-container {
+  padding-bottom: 15px; }
+
+.dark-edge-container .edge-ad {
+  margin-top: 1.5em; }
