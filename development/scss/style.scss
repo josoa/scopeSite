@@ -459,6 +459,11 @@ iframe {
 	max-width: 80%;
 }
 
+#site-logo-edge {
+	max-width: 40%;
+	padding: 10px;
+}
+
 /* social media */
 
 .social {
@@ -543,7 +548,7 @@ nav li {
 }
 
 
-.photo-bg-home, .photo-bg {
+.photo-bg-home, .photo-bg, .photo-bg-edge {
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -559,6 +564,11 @@ nav li {
 	padding-top: 15px;
 	background-attachment: fixed;
 }
+
+.photo-bg-edge {
+	background-position: center;
+	padding: 15% 15px;
+	}
 
 .panel-home > .product {
 	padding: 5px;
