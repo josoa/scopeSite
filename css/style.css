@@ -12278,6 +12278,10 @@ iframe {
 #site-logo {
   max-width: 80%; }
 
+#site-logo-edge {
+  max-width: 40%;
+  padding: 10px; }
+
 /* social media */
 .social {
   margin: 20px 0 10px 0; }
@@ -12341,7 +12345,7 @@ nav li {
 .container-fluid {
   padding: 0 50px; }
 
-.photo-bg-home, .photo-bg {
+.photo-bg-home, .photo-bg, .photo-bg-edge {
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -12354,6 +12358,10 @@ nav li {
 .photo-bg {
   padding-top: 15px;
   background-attachment: fixed; }
+
+.photo-bg-edge {
+  background-position: center;
+  padding: 15% 15px; }
 
 .panel-home > .product {
   padding: 5px; }
@@ -12421,3 +12429,10 @@ footer {
 
 .dark-edge-container .edge-ad {
   margin-top: 1.5em; }
+
+.picture-text {
+  margin-top: 25px; }
+
+.field-bg {
+  background-color: #349930;
+  background-image: url("../img/field_texture.png"); }
