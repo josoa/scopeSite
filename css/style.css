@@ -12258,6 +12258,9 @@ iframe {
 .btn {
   margin-bottom: 15px; }
 
+form .btn {
+  margin-bottom: 0; }
+
 .btn, .btn-primary {
   border-radius: 0px;
   border: none; }
@@ -12361,7 +12364,7 @@ nav li {
 
 .photo-bg-edge {
   background-position: center;
-  padding: 15% 15px; }
+  padding: 10% 15px 20%; }
 
 .panel-home > .product {
   padding: 5px; }
@@ -12436,3 +12439,6 @@ footer {
 .field-bg {
   background-color: #349930;
   background-image: url("../img/field_texture.png"); }
+
+.price {
+  font-size: 2em; }
