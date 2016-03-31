@@ -571,7 +571,7 @@ nav li {
 
 .photo-bg-edge {
 	background-position: center;
-	padding: 15% 15px;
+	padding: 10% 15px 20%;
 	}
 
 .panel-home > .product {
@@ -673,6 +673,10 @@ footer {
 	background-color: #349930;
 
 	background-image: url('../img/field_texture.png');
+}
+
+.price {
+	font-size: 2em;
 }
 
 @media (max-width: 1065px) {
