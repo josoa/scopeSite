@@ -11973,6 +11973,9 @@ body {
 .edge-container {
   background: #f7941e; }
 
+.edge-text {
+  color: #f7941e; }
+
 .light-container {
   background: rgba(250, 250, 250, 0.8); }
 
@@ -12037,6 +12040,9 @@ footer {
 
 .panel-default {
   border: none; }
+
+.panel a:link h5, .panel a:hover h5, .panel a:target h5, .panel a:active h5, .panel a:link h4, .panel a:hover h4, .panel a:target h4, .panel a:active h4 {
+  color: #323638; }
 
 .btn {
   background-color: #337ab7;
@@ -12116,11 +12122,27 @@ blockquote {
 .divider {
   border-bottom: 2px solid #337ab7; }
 
+.read_more_container {
+  background: #337ab7;
+  color: #fafafa; }
+
+.tumblr_title {
+  color: #286090;
+  border-left: 50px solid #f7941e;
+  padding-left: 10px; }
+
+.tumblr_posts {
+  background: #fafafa;
+  padding: 25px; }
+
+.blog {
+  padding-top: 53px; }
+
 /* typography */
 body, .product h2 {
   font-family: 'Open Sans', sans-serif; }
 
-nav li, footer p, .picture-text, .product, .btn, .featured-list, .nav-tabs li a:link, .bam-text, h1, h2, h3, h4, h5, h6 {
+nav li, footer p, .picture-text, .product, .btn, .featured-list, .nav-tabs li a:link, .bam-text, .tumblr_title, .read_more_container, h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase; }
 
@@ -12133,9 +12155,17 @@ nav, footer {
 h1 {
   line-height: 2em; }
 
-h6 {
+.tumblr_title {
+  font-size: 2em;
+  margin-bottom: 15px;
+  line-height: 1.6em; }
+
+h6, .read_more_container {
   font-size: 1em;
   line-height: 1.25em; }
+
+p {
+  line-height: 1.6em; }
 
 .social ul li {
   font-size: 1.2em; }
@@ -12169,6 +12199,13 @@ h6 {
 
 .offer {
   text-align: center; }
+
+.contact h2 {
+  color: #f7941e; }
+
+.contact h4 {
+  font-size: 1.6em;
+  line-height: 1.5em; }
 
 .panel-home > .product h2 {
   text-align: center;
@@ -12278,13 +12315,6 @@ form .btn {
 /************************/
 /******** HEADER ********/
 /************************/
-#site-logo {
-  max-width: 80%; }
-
-#site-logo-edge {
-  max-width: 40%;
-  padding: 10px; }
-
 /* social media */
 .social {
   margin: 20px 0 10px 0; }
@@ -12436,9 +12466,70 @@ footer {
 .picture-text {
   margin-top: 25px; }
 
-.field-bg {
-  background-color: #349930;
-  background-image: url("../img/field_texture.png"); }
-
 .price {
   font-size: 2em; }
+
+[src*="cart.svg"] {
+  max-width: 35px; }
+
+[src*="appStore.svg"] {
+  width: 60%;
+  margin: 10% 20%; }
+
+[src*="order.svg"] {
+  max-width: 60%; }
+
+[src*="add.svg"] {
+  max-width: 100px;
+  float: right;
+  margin-top: -18px;
+  margin-right: -5px; }
+
+.navbar {
+  padding: 0 25px;
+  margin-bottom: 0; }
+
+.navbar-brand img {
+  max-height: 100px;
+  padding-bottom: 5px; }
+
+.collapse .navbar-nav {
+  max-width: 60%; }
+
+/* TUMBLR */
+.tumblr_posts li {
+  list-style: none; }
+
+.tumblr_post {
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  border-bottom: solid 2px #f7941e; }
+
+.tumblr_body img {
+  width: 70%;
+  height: 100%;
+  margin: 1% 15%; }
+
+@media (max-width: 1310px) {
+  .first-row {
+    margin-top: 90px; }
+  .picture-text {
+    text-align: center; }
+  .featured-list {
+    font-size: 1.5em; }
+  .featured-list li {
+    margin-bottom: 10px; } }
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    max-width: 80%; }
+  .collapse .navbar-nav {
+    margin-top: 56px;
+    max-width: 100%; }
+  .social ul {
+    float: left; }
+  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    height: 400px;
+    max-height: 400px; }
+  .picture-text {
+    font-size: 2.5em; } }
