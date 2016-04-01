@@ -41,6 +41,11 @@ gulp.task('img', function() {
 		.pipe(gulp.dest("production/img"));
 });
 
+gulp.task('imgFolders', function() {
+	return gulp.src("development/img/*/*.*")
+		.pipe(gulp.dest("production/img"));
+});
+
 //gulp.task('html', function() {
 //	return gulp.src("development/*.html")
 //		.pipe(gulp.dest("production/"))
@@ -69,4 +74,4 @@ gulp.task('fileinclude', function() {
 
 
 gulp.task('default', ['serve', 'fileinclude', 'copy']);
-gulp.task('copy', ['js', 'img', 'fonts']);
+gulp.task('copy', ['js', 'img', 'imgFolders', 'fonts']);
