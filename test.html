@@ -20,6 +20,10 @@
 
 
 
+
+
+
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--   [if lt IE 9]>
@@ -130,7 +134,7 @@
                 <a href="faq.html">FAQ</a>
               </li>
               <li>
-                <a href="blog-post.html">Blog</a>
+                <a href="blog.html">Blog</a>
               </li>
               <li><a href="sports.html">Sports</a></li>
             </ul>
@@ -146,21 +150,66 @@
   </nav>
 
 
-  
+;
 
 
-    <!-- Page Content -->
-    <div class="container-fluid row first-row photo-bg" style="background-image: url('./img/30sportScope/DSC_0068.JPG');">
+<div class="container-fluid">
+  <div class="first-row row">
 
-        <div class="col-md-2"></div>
-        <div class="col-md-8 blog">
-           <script type='text/javascript' src='http://sportscopevideo.tumblr.com/js'></script>
+    <div class="panel-group switch-container" id="accordion">
+          <div class="panel panel-default edge-panel roomy">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">
+              <div class="panel-heading">
+                <h4 class="panel-title text-center">
+                 <i class="fa fa-video-camera fa-lg"></i> Connect
+               </h4>
+               <h5 class="text-center">existing HD cameras to system.</h5>
+             </div>
+           </a>
+           <div id="collapseEleven" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>The EDGE Recorders will connect to your existing press box and end zone cameras with an HDMI cable. All you need is a high definition camcorder with an HDMI out port.</p>
+              <img class="switch-image" src="./img/edge/1.jpg" alt=""> 
+            </div>
+          </div>
         </div>
-    </div>
+        <!-- /.panel -->
+        <div class="panel panel-default edge-panel roomy">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve">
+            <div class="panel-heading">
+
+              <h4 class="panel-title text-center">
+                <img src="./img/edge/icons/computer.svg" alt="EDGE Instant Replay" width="35" height="35"> Record
+              </h4>
+              <h5 class="text-center">and stop plays with iPad app.</h5>
+            </div>
+          </a>
+          <div id="collapseTwelve" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>The EGDE iPad app allows one operator to start and stop the recording of multiple cameras at the same time giving you the same number of clips from each camera angle.  All your camera operators have to do is point and zoom the cameras.</p> 
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default edge-panel roomy">
+          <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen">
+            <div class="panel-heading">
+              <h4 class="panel-title text-center">
+                <img src="./img/edge/icons/play.svg" alt="EDGE Instant Replay" width="35" height="35"> Replay
+              </h4>
+              <h5 class="text-center">plays on iPad in 2-3 seconds.</h5>
+            </div>
+          </a>
+          <div id="collapseThirteen" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>After a play is captured by the EDGE Recorder, the play will automatically be sent to every iPad connected to the EDGE Network. Once the play is downloaded to your iPad, you will be able to replay that clip over and over.</p> 
+            </div>
+          </div>
+        </div>
 
 
-        <hr>
-  <!-- Footer -->
+  </div>
+</div>
+    <!-- Footer -->
   <div class="container">
     <footer>
 
@@ -205,5 +254,4 @@
   </script>
 
 </body>
-</html>  
-
+</html>;

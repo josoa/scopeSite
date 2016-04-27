@@ -12288,9 +12288,6 @@ blockquote {
 .dark-edge-container {
   line-height: 1.75em; }
 
-.price {
-  font-size: 2em; }
-
 /************************/
 /******** GLOBAL ********/
 /************************/
@@ -12382,24 +12379,6 @@ form .btn {
 nav li {
   list-style: none; }
 
-.navbar {
-  padding: 0 25px;
-  margin-bottom: 0;
-  min-height: 135px; }
-
-.navbar-brand img {
-  max-height: 100px;
-  padding-bottom: 5px; }
-
-.collapse .navbar-nav {
-  max-width: 60%; }
-
-.dropdown:hover .dropdown-menu {
-  display: block; }
-
-.navbar-header {
-  display: inline; }
-
 /*********************************/
 /******** SPECIFIC IMAGES ********/
 /*********************************/
@@ -12414,27 +12393,6 @@ nav li {
 .panel img {
   max-width: 100%;
   max-height: 250px; }
-
-/*********************************/
-/******* BACKGROUND IMAGES *******/
-/*********************************/
-.photo-bg-home, .photo-bg, .photo-bg-edge {
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.photo-bg-home {
-  background-attachment: scroll;
-  background-position: top;
-  padding-bottom: 15%; }
-
-.photo-bg {
-  padding-top: 15px;
-  background-attachment: fixed; }
-
-.photo-bg-edge {
-  background-position: center;
-  padding: 10% 15px 20%; }
 
 /************************/
 /******** LAYOUT ********/
@@ -12458,6 +12416,24 @@ nav li {
 
 .container-fluid {
   padding: 0 50px; }
+
+.photo-bg-home, .photo-bg, .photo-bg-edge {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.photo-bg-home {
+  background-attachment: scroll;
+  background-position: top;
+  padding-bottom: 15%; }
+
+.photo-bg {
+  padding-top: 15px;
+  background-attachment: fixed; }
+
+.photo-bg-edge {
+  background-position: center;
+  padding: 10% 15px 20%; }
 
 .panel-home > .product {
   padding: 5px; }
@@ -12485,8 +12461,14 @@ section {
 blockquote {
   margin-top: 25px; }
 
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
 footer {
   margin: 25px 0 10px; }
+
+.navbar-header {
+  display: inline; }
 
 /** EDGE pages **/
 .edge-panel .panel-heading {
@@ -12523,6 +12505,9 @@ footer {
 .picture-text {
   margin-top: 25px; }
 
+.price {
+  font-size: 2em; }
+
 [src*="cart.svg"] {
   max-width: 35px; }
 
@@ -12539,6 +12524,18 @@ footer {
   margin-top: -18px;
   margin-right: -5px; }
 
+.navbar {
+  padding: 0 25px;
+  margin-bottom: 0;
+  min-height: 135px; }
+
+.navbar-brand img {
+  max-height: 100px;
+  padding-bottom: 5px; }
+
+.collapse .navbar-nav {
+  max-width: 60%; }
+
 /* TUMBLR */
 .tumblr_posts li {
   list-style: none; }
@@ -12553,42 +12550,6 @@ footer {
   height: 100%;
   margin: 1% 15%; }
 
-/************************/
-/* EDGE TABS */
-/************************/
-.switch-container {
-  width: 100%;
-  position: relative; }
-
-.switch-container .panel {
-  background: none; }
-
-.switch-container .panel-heading {
-  max-width: 50%; }
-
-.switch-container .panel-body p {
-  max-width: 50%;
-  padding: 0 25px; }
-
-.switch-container .default-image, .switch-container .panel-body .switch-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50%;
-  opacity: 0; }
-
-.switch-container .panel-body .switch-image img {
-  width: 100%;
-  max-height: 100%; }
-
-.switch-container [aria-expanded=true] .switch-image {
-  opacity: 1;
-  transition: opacity 1.5s; }
-
-.switch-container .default-image {
-  opacity: 1; }
-
-/* RESPONSIVE */
 @media (max-width: 1024px) {
   .navbar li {
     margin-right: 20px;
@@ -12645,19 +12606,4 @@ footer {
     padding: 15px; }
   .photo-bg {
     background-size: cover;
-    background-position: -100px, 100px; }
-  .switch-container {
-    width: 100%;
-    position: relative; }
-  .switch-container .panel-heading {
-    max-width: 100%; }
-  .switch-container .panel-body p {
-    max-width: 100%;
-    padding: 0 25px; }
-  .switch-container .panel-body .switch-image {
-    position: relative;
-    opacity: 0;
-    width: 100%; }
-  .switch-container [aria-expanded=true] .switch-image {
-    opacity: 1;
-    transition: opacity 1.5s; } }
+    background-position: -100px, 100px; } }
