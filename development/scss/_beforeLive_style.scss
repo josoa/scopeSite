@@ -1,0 +1,871 @@
+@import '_bootstrap';
+@import '_bootstrap.min';
+@import '_modern-business';
+
+$color1: rgb(247, 148, 30);
+$color2: rgb(50, 54, 56);
+$color3: rgb(250,250,250);
+$color4: rgb(51, 122, 183);
+$color5: rgb(40, 96,144);
+$color6: rgb(150, 150,153);
+$edgecolor2: rgb(28, 117, 188);
+$edgecolor3: rgb(35, 31, 32);
+
+$color3-trans: rgba(250,250,250,.8);
+
+/* color */
+
+body {
+	color: $color2;
+}
+
+.section-header {
+	color: $color4;
+}
+
+
+.dark-container {
+	background: $color5;
+}
+
+
+.dark-text {
+	color: $color3;
+}
+
+.dark-text small {
+	color: $color6;
+}
+
+.dark-edge-container {
+	background: $edgecolor3;
+}
+
+.edge-container {
+	background: $color1;
+}
+
+.edge-text {
+	color: $color1;
+}
+
+.light-container {
+	background: $color3-trans;
+}
+
+.light-text {
+	color: $color3;
+}
+
+footer {
+	background: #fff;
+}
+
+.breadcrumb {
+	background: none;
+}
+
+.navbar {
+	background: #fff;
+}
+
+.nav > li > a:link, .nav > li > a:visited {
+	color: $color2;
+}
+
+.nav > li > a:hover, .nav > li > a:active, .nav > li > a:target {
+	background: $color3;
+	color: $color1;
+}
+
+.dropdown-menu >li > a:hover {
+	color: $color6;
+}
+
+
+.social a:link, .social a:visited, .social a:target {
+	color: $color6;
+}
+
+.social li:last-of-type a:link, .social li:last-of-type a:visited, .social li:last-of-type a:target {
+	color: $color3;
+}
+
+.social ul li a:hover, .social li:last-of-type a:hover {
+	color: $color4;
+}
+
+.fa-shopping-cart {
+	background: $color5;
+}
+
+
+.title {
+	border-bottom: solid 1.5px $color1;
+}
+
+.picture-text {
+	color: $color3;
+}
+
+
+
+.offer {
+	color: $color4;
+}
+
+
+.edge-ad {
+	background-color: $color1;
+}
+
+.edge-ad h4 {
+	color: $color2;
+}
+
+.edge-panel i {
+	color: $color1;
+}
+
+.panel-home {
+	background: $color3-trans;
+}
+
+.panel-home > .product {
+	color: $color3;
+	background-color: $color5;
+}
+
+.panel-default {
+	border: none;
+}
+
+.panel a:link h5, .panel a:hover h5, .panel a:target h5, .panel a:active h5, .panel a:link h4, .panel a:hover h4, .panel a:target h4, .panel a:active h4 {
+	color: $color2;
+}
+
+.btn {
+	background-color: $color4;
+	color: $color3;
+}
+
+.btn:hover {
+	background-color: $color5;
+	color: $color3;
+}
+
+.btn-features {
+	background-color: $color2;
+	color: $color3;
+}
+
+.nav-tabs > li > a:link {
+	background: $color4;
+	border: none;
+	color: $color3;
+}
+
+.nav-tabs > li > a:hover {
+	background: $color5;
+	color: $color3;
+}
+
+.nav-tabs > li > a:link .active {
+	background: $color6;
+}
+
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+	border: none;
+}
+
+.navbar-toggle .icon-bar {
+	color: $color3;
+}
+
+.navbar-toggle {
+	background: $color1;
+}
+
+
+.bam-text li {
+	list-style: none;
+}
+
+.bam-text li a:link {
+	color: $color3;
+}
+
+.bam-text li a:hover, .bam-text li .active {
+	color: $color1;
+}
+
+.dark-container blockquote {
+	border-left: 3px solid $color3;
+}
+
+blockquote {
+	border-left: 3px solid $color5;
+}
+
+.table-compare tbody tr th {
+	background: $color6;
+	color: $color3;
+}
+
+.table-compare tbody tr td:first-of-type {
+	color: $color5;
+}
+
+.table-compare tr td:nth-of-type(2), .table-compare tr th:nth-of-type(2) {
+	border-left: 2px solid $color5;
+	border-right: 2px solid $color5;
+}
+
+.table-compare thead th:nth-of-type(2) {
+	background: $color5;
+	color: $color3;
+}
+
+.table-compare tbody > tr:last-of-type > th:nth-of-type(2) {
+	background: $color5;
+	color: $color3;
+}
+
+.table-compare .check-yes {
+	background: #73c373;
+	color: $color3;
+}
+
+.table-compare .no {
+	background: #555;
+	color: $color3;
+}
+
+.divider {
+	border-bottom: 2px solid $color4;
+}
+
+.read_more_container {
+	background: $color4;
+	color: $color3;	
+}
+
+.tumblr_title {
+	color: $color5;
+	border-left: 35px solid $color1;
+	padding-left: 10px;
+}
+
+.tumblr_posts {
+	background: $color3;
+	padding: 25px;
+}
+
+.blog {
+	padding-top: 53px;
+}
+
+/* typography */
+
+body, .product h2 {
+	font-family: 'Open Sans', sans-serif;
+}
+
+nav li, footer p, .picture-text, .product, .btn, .featured-list, .nav-tabs li a:link, .bam-text, .tumblr_title, .read_more_container, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+}
+
+body {
+	line-height: 1.68em;
+}
+
+nav, footer {
+	font-size: 1.25em;
+}
+
+h1 {
+	line-height: 2em;
+}
+
+.tumblr_title {
+	font-size: 2em;
+	margin-bottom: 15px;
+	line-height: 1.6em;
+}
+
+h6, .read_more_container {
+	font-size: 1em;
+	line-height: 1.25em;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+.social ul li {
+	font-size: 1.2em;
+}
+
+.inline {
+	display: inline;
+}
+
+.picture-text {
+	font-size: 4em;
+}
+
+.edge-ad h4 {
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.btn {
+	font-size: 1.25em;
+	letter-spacing: .6px;
+}
+
+.btn-features {
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.btn-donate h4 {
+	line-height: .43em;
+}
+
+.btn-xs {
+	font-size: 1em;
+}
+
+.featured-list {
+	font-size: 1em;
+}
+
+.offer {
+	text-align: center;
+}
+
+.contact h2 {
+	color: $color1;
+}
+
+.contact h4 {
+	font-size: 1.6em;
+	line-height: 1.5em;
+}
+
+.panel-home > .product h2 {
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 2.2px;
+	font-size: 2em;
+	margin-top:10px;
+
+}
+
+.product h4 {
+	font-size: 2em;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.dropdown-menu li {
+	font-size: 1.125em;
+	font-weight: 700;
+}
+
+blockquote {
+	font-size: 1.125em;
+	line-height:1.875em;
+}
+
+
+.bam-text li {
+	font-size: 3em;
+	line-height: 1.25em;
+	margin-bottom: 35px;
+}
+
+.table-compare th, .table-compare tbody{
+	text-align: center;
+}
+
+.table-compare tr td:first-of-type,   .table-compare tr th:first-of-type{
+	font-weight: 600;
+	text-align: left;
+}
+
+.dark-edge-container h3 {
+	line-height: 1.35em;
+}
+
+.dark-edge-container {
+	line-height: 1.75em;
+}
+
+
+/************************/
+/******** GLOBAL ********/
+/************************/
+
+
+/* links */
+
+a:hover {
+	text-decoration: none;
+}
+
+/* lists */
+
+ul {
+	padding-left: 15px;
+}
+
+ul li {
+	list-style: outside square;
+}
+
+ol li {
+	list-style: outside decimal;
+}
+
+.featured-list {
+	margin-top: 10px;
+}
+
+.featured-list li {
+	margin-bottom: 5px;
+}
+
+.dropdown-menu li {
+	margin: 6px 0;
+}
+
+.divider {
+	list-style: none;
+}
+
+/* images */
+
+img {
+	max-width: 100%;
+}
+
+/* media */
+
+iframe {
+	width: 100%;
+	margin: 0;
+	height: 300px;
+}
+
+.iframe-lg {
+	height: 400px;
+}
+
+/* buttons */
+
+.btn {
+	margin-bottom: 15px;
+}
+
+form .btn {
+	margin-bottom: 0;
+}
+
+.btn, .btn-primary {
+	border-radius: 0px;
+	border: none;
+}
+
+.btn-features {
+	margin: 15px 7px 0 0;
+	padding: 4px 7px;
+}
+
+.btn-donate {
+	padding: 10px 0 15px; 
+}
+
+.btn-order {
+	margin-top: 1.5em;
+}
+
+
+
+/************************/
+/******** HEADER ********/
+/************************/
+
+
+/* social media */
+
+.social {
+	margin: 20px 0 10px 0;
+}
+
+.social ul {
+	margin: 0;
+	padding-left: 0;
+	float: right;
+}
+
+.social ul li {
+	float: left;
+	list-style: none;
+	margin-left: 25px;
+}
+
+.social ul li:first-of-type {
+	margin-left: 0;
+}
+
+.fa-shopping-cart {
+	padding: 5px 7px;
+	border-radius: 25%;
+} 
+
+/* navigation */
+
+nav li {
+	list-style: none;
+}
+
+
+/*********************************/
+/******** SPECIFIC IMAGES ********/
+/*********************************/
+
+.edge-ad img {
+	width: 70%;
+	margin: 40px 15% 10px 15%;
+}
+
+.btn-donate img {
+	width: 80%;
+	margin: 0 10%;
+}
+
+.panel img {
+	max-width: 100%;
+	max-height: 250px;
+}
+
+/************************/
+/******** LAYOUT ********/
+/************************/
+
+.first-row {
+	margin: 85px 0 0;
+}
+
+.page-header {
+	float: right;
+}
+
+.page-header:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.container-fluid {
+	padding: 0 50px;
+}
+
+
+.photo-bg-home, .photo-bg, .photo-bg-edge {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.photo-bg-home {
+	background-attachment: scroll;
+	background-position: top;
+	padding-bottom: 15%;
+}
+
+.photo-bg {
+	padding-top: 15px;
+	background-attachment: fixed;
+}
+
+.photo-bg-edge {
+	background-position: center;
+	padding: 10% 15px 20%;
+	}
+
+.panel-home > .product {
+	padding: 5px;
+}
+
+.container-fluid .first-panel {
+	margin-top: 10%;
+}
+
+.container-fluid .roomy  {
+	margin: 16px 0;
+
+}
+
+.title {
+	margin-bottom: 22px;
+}
+
+.section-header {
+	margin: 25px 0 15px;
+	padding: 15px;
+}
+
+.dark-container {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+section {
+	margin-bottom: 45px;
+}
+
+blockquote {
+	margin-top: 25px;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+
+footer {
+	margin: 25px 0 10px;
+}
+
+.navbar-header {
+	display: inline;
+}
+
+/** EDGE pages **/
+
+.edge-panel .panel-heading {
+	border: none;
+	background: none;
+}
+
+
+.edge-panel .panel-heading .panel-title {
+	font-size: 1.6em;
+	color: $color5;
+}
+
+.edge-title {
+	color: $color1;
+	margin: 0;
+	border-top: 2px solid $color1;
+}
+
+.edge-container .edge-title {
+	color: $color3;
+}
+
+.dark-edge-container {
+	padding-top: 15px;
+}
+
+
+.table-compare tbody tr .indent {
+	padding-left: 45px;
+}
+
+.bottom {
+	padding-top: 35px;
+}
+
+.dark-edge-container {
+	padding-bottom: 15px;
+}
+
+.dark-edge-container .edge-ad {
+	margin-top: 1.5em;
+}
+
+.picture-text {
+	margin-top: 25px;
+}
+
+.price {
+	font-size: 2em;
+}
+
+[src*="cart.svg"] {
+	max-width: 35px;
+}
+
+[src*="appStore.svg"] {
+	width: 60%;
+	margin: 10% 20%;
+}
+
+[src*="order.svg"] {
+	max-width: 60%;
+}
+
+[src*="add.svg"] {
+	max-width: 100px;
+	float: right;
+	margin-top: -18px;
+	margin-right: -5px;
+}
+
+.navbar {
+	padding: 0 25px;
+	margin-bottom: 0;
+	min-height: 135px;
+
+
+}
+
+.navbar-brand img {
+	max-height: 100px;
+	padding-bottom: 5px;
+}
+
+.collapse .navbar-nav {
+	max-width: 60%;
+}
+
+/* TUMBLR */
+
+.tumblr_posts li {	
+	list-style: none;
+}
+.tumblr_post {	
+	padding-bottom: 15px;
+	margin-bottom: 50px;
+	border-bottom: solid 2px $color1;
+}
+
+.tumblr_body img {	
+	width: 70%;
+	height: 100%;
+	margin: 1% 15%;
+}
+
+.read_more_container a {
+	
+}
+
+
+
+@media (max-width: 1310px) {
+
+.navbar li {
+	margin-right: 20px;
+	font-size: .9em;
+}
+
+.navbar-nav > li > a {
+	padding: 12px 5px;
+}
+.first-row {
+		margin: 95px 0 0;
+	}
+
+	.picture-text {
+		text-align: center;
+	}
+
+.featured-list {
+	font-size: 1.5em;
+}
+
+.featured-list li {
+	margin-bottom: 10px;
+}
+
+}
+
+@media (max-width: 768px) {
+.tumblr_title {
+	color: $color5;
+	border-left: 15px solid $color1;
+	padding-left: 10px;
+}
+
+.navbar-nav > li > a {
+	padding: 12px 5px;
+}
+
+.container-fluid {
+		padding: 0 10px;
+		max-width: 100%;
+	}
+.featured-list {
+		font-size: 1.125em;
+	}
+
+.edge-ad {
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+}
+
+.row {
+	margin-left: -2px;
+	margin-right: -2px;
+}
+
+.roomy {
+	margin-top: 55px;
+}
+
+.navbar-brand {
+	max-width: 80%;
+}
+
+.collapse .navbar-nav {
+	margin-top: 56px;
+	max-width: 100%;
+}
+
+.social ul {
+	float: left;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+	height: 400px;
+	max-height: 400px;
+}
+
+.navbar li {
+	margin-right: 5px;
+	font-size: 1em;
+}
+
+.picture-text {
+	font-size: 2.5em;
+}
+
+.btn-donate {
+	padding: 15px;
+}
+
+.photo-bg {
+	background-size: cover;
+	background-position: -100px, 100px;
+}
+
+	
+}
