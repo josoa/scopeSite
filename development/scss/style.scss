@@ -455,7 +455,7 @@ nav li {
   padding-bottom: 5px; }
 
 .collapse .navbar-nav {
-  max-width: 60%; }
+  max-width: 80%; }
 
 .dropdown:hover .dropdown-menu {
   display: block; }
@@ -619,9 +619,9 @@ footer {
   height: 100%;
   margin: 1% 15%; }
 
-/************************/
-/* EDGE TABS */
-/************************/
+/*************************/
+/**** IMAGE SWITCHING ****/
+/*************************/
 .switch-container {
   width: 100%;
   position: relative;
@@ -638,24 +638,32 @@ footer {
 .switch-container .panel-body p {
   max-width: 50%;
   padding: 0 25px;
+  float: left;
 }
 
-.switch-container .default-image, .switch-container .panel-body .switch-image {
+.switch-container .panel-body .switch-image-right, .switch-container .panel-body .switch-image-left {
   position: absolute;
   top: 0;
-  right: 0;
   width: 50%;
   opacity: 0;
 }
 
-.switch-container .panel-body .switch-image img {
+.switch-container .panel-body .switch-image-right {
+  right: 0;
+}
+
+.switch-container .panel-body .switch-image-left {
+  left: 0;
+}
+
+.switch-container .panel-body .switch-image-right img, .switch-container .panel-body .switch-image-left img {
   width: 100%;  
   max-height: 100%;
 }
 
-.switch-container [aria-expanded=true] .switch-image {
+.switch-container [aria-expanded=true] .switch-image-right, .switch-container [aria-expanded=true] .switch-image-left {
   opacity: 1;
-  transition: opacity 1.5s;
+  transition: opacity 1s .35s;
 }
 
 .switch-container .default-image {
@@ -740,16 +748,11 @@ footer {
   padding: 0 25px;
 }
 
-.switch-container .panel-body .switch-image {
+.switch-container .panel-body .switch-image-right, .switch-container .panel-body .switch-image-left {
   position: relative;
-  opacity: 0;
   width: 100%;
 }
 
-.switch-container [aria-expanded=true] .switch-image {
-  opacity: 1;
-  transition: opacity 1.5s;
-}
 
 
 
