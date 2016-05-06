@@ -12354,6 +12354,10 @@ form .btn {
 .btn-order {
   margin-top: 1.5em; }
 
+/* container */
+.container-fluid {
+  padding: 0 50px; }
+
 /************************/
 /******** HEADER ********/
 /************************/
@@ -12392,7 +12396,7 @@ nav li {
   padding-bottom: 5px; }
 
 .collapse .navbar-nav {
-  max-width: 60%; }
+  max-width: 80%; }
 
 .dropdown:hover .dropdown-menu {
   display: block; }
@@ -12455,9 +12459,6 @@ nav li {
 
 .right {
   float: right; }
-
-.container-fluid {
-  padding: 0 50px; }
 
 .panel-home > .product {
   padding: 5px; }
@@ -12553,9 +12554,9 @@ footer {
   height: 100%;
   margin: 1% 15%; }
 
-/************************/
-/* EDGE TABS */
-/************************/
+/*************************/
+/**** IMAGE SWITCHING ****/
+/*************************/
 .switch-container {
   width: 100%;
   position: relative; }
@@ -12568,14 +12569,17 @@ footer {
 
 .switch-container .panel-body p {
   max-width: 50%;
-  padding: 0 25px; }
+  padding: 0 25px;
+  float: left; }
 
-.switch-container .default-image, .switch-container .panel-body .switch-image {
+.switch-container .panel-body .switch-image {
   position: absolute;
   top: 0;
-  right: 0;
   width: 50%;
   opacity: 0; }
+
+.switch-container .panel-body .switch-image {
+  right: 0; }
 
 .switch-container .panel-body .switch-image img {
   width: 100%;
@@ -12583,10 +12587,7 @@ footer {
 
 .switch-container [aria-expanded=true] .switch-image {
   opacity: 1;
-  transition: opacity 1.5s; }
-
-.switch-container .default-image {
-  opacity: 1; }
+  transition: opacity 1s .35s; }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
@@ -12656,8 +12657,4 @@ footer {
     padding: 0 25px; }
   .switch-container .panel-body .switch-image {
     position: relative;
-    opacity: 0;
-    width: 100%; }
-  .switch-container [aria-expanded=true] .switch-image {
-    opacity: 1;
-    transition: opacity 1.5s; } }
+    width: 100%; } }
